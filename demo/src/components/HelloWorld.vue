@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    
+     这里是stort----->{{this.$store.state.count}}
   </div>
 </template>
 
