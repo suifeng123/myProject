@@ -1,11 +1,16 @@
 <template>
   <div class="hello">
      这里是stort----->{{this.$store.state.count}}
+	 <div id="circle" style="width: 100px;height: 100px;"></div>
+	 
+	 
   </div>
 </template>
 
 <script>
 export default {
+	//定义一个组件
+	
   name: 'HelloWorld',
 	mounted(){
 		console.log("进行获取相应的数据");
@@ -14,7 +19,8 @@ export default {
 	},
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+	  message:"from parent"
     }
   }
 }
@@ -35,5 +41,13 @@ li {
 }
 a {
   color: #42b983;
+}
+
+#circle{
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
 }
 </style>
